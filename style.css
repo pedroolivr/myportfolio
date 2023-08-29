@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&family=Saira+Condensed:wght@300;500&family=Saira+Extra+Condensed&family=Signika+Negative&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00AD6F;
+    border-radius: 10px;
+}
+
+body{
+    font-size: 100%;
+    background-size: cover;
+    background-color: #0F0F0F;
+    overflow-x: hidden;
+ }
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7px;
+    background: #0B0B0B;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0%;
+}
+
+.logo {
+    height: 100px;
+    position: absolute;
+    top: 0%;
+    padding-bottom: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    font-size: 17px;
+    font-family: 'Saira', sans-serif;
+    color: #FFFFFF;
+    position: relative;
+}
+
+/* hover nav */
+
+.menu-item::after {
+    content: " ";
+    width: 0%;
+    height: 1px;
+    background: rgb(0,173,111);
+    background: linear-gradient(90deg, rgba(0,173,111,1) 0%, rgba(0,64,41,1) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in;
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+/* fim do hover nav */
+
+.conteudo {
+    margin-bottom: 48px;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 10px;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.name {
+    font-size: 80px;
+    font-family: 'Signika Negative', sans-serif; 
+    color: #fff;
+}
+
+
+.stack {
+    font-size: 35px;
+    position: absolute;
+    padding-top: 75px;
+    padding-right: 220px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #00AD6F;
+    text-shadow: rgb(0, 173, 111) 0px 0px 10px;
+}
+
+.social-contacts {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 5px;
+    padding-right: 400px;
+}
+
+.linkedin {
+    height: 30px;
+    border-radius: 10px;
+}
+
+.github {
+    height: 30px;
+    border-radius: 50px;
+}
+
+/* hover icons */
+.linkedin:hover,
+.linkedin:focus,
+.github:hover,
+.github:focus {
+    outline: none;
+    background-color: #00AD6F;
+    box-shadow: rgb(0, 173, 111) 0px 0px 10px; 
+    transition: 0.2s ease-in-out;
+}
+/* hover icons */
+
+.img-section1 {
+    max-width: 30%;
+}
+
+#habilidades {
+    background: #0B0B0B;
+    margin-top: 200px;
+}
+
+.container-titulo-habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 90px;
+}
+
+.habilidades-titulo {
+    font-size: 42px;
+    font-family:'Saira', sans-serif;
+    color: #FFFFFF;
+}
+
+.minhas-habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container-hcj {
+    height: 200px;
+    width: 1000px;
+}
+
+.titulo-hcj {
+    font-size: 35px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #00AD6F;
+}
+
+.img-desc-hcj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-desc-hcj {
+    width: 400px;
+}
+
+.desc-hcj {
+    font-size: 23px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #FFFFFF;
+}
+
+.img-hcj {
+    height: 125px;
+    padding-right: 190px;
+}
+
+.container-react {
+    height: 200px;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.titulo-react {
+    font-size: 35px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #00AD6F;
+}
+
+.img-desc-react {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-desc-react {
+    width: 450px;
+}
+
+.desc-react {
+    font-size: 23px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #FFFFFF;
+}
+
+.img-react {
+    height: 100px;
+    padding-right: 250px;
+}
+
+.container-bootstrap {
+    height: 250px;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.titulo-bootstrap {
+    font-size: 35px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #00AD6F;
+}
+
+.img-desc-bootstrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-desc-bootstrap {
+    width: 450px;
+}
+
+.desc-bootstrap {
+    font-size: 23px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #FFFFFF;
+}
+
+.img-bootstrap{
+    height: 200px;
+    padding-right: 100px;
+}
+
+.container-gits {
+    height: 250px;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.titulo-gits {
+    font-size: 35px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #00AD6F;
+}
+
+.img-desc-gits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-desc-gits {
+    width: 450px;
+}
+
+.desc-gits {
+    font-size: 23px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #FFFFFF;
+}
+
+.img-gits {
+    height: 200px;
+    padding-right: 100px;
+}
+
+#projetos {
+    margin-bottom: 32px;
+} 
+
+.container-titulo-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 90px;
+}
+
+.projetos-titulo {
+    font-size: 42px;
+    font-family:'Saira', sans-serif;
+    color: #FFFFFF;
+}
+
+.meus-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cards-planos {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    border: 3px solid #00AD6F;
+}
+
+.print-planos {
+    height: 200px;
+    padding-top: 1px;
+}
+
+.container-descriçao-planos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-planos {
+    font-size: 25px;
+    font-family:'Saira', sans-serif;
+    color: #FFFFFF;
+    padding: 7px 15px 0px 15px
+}
+
+.descriçao-planos {
+    font-size: 19px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #FFFFFF;
+    padding: 50px 15px 0px 15px;
+}
+
+.botoes-planos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 15px;
+}
+
+.card-relogio {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    border: 3px solid #00AD6F;
+}
+
+.print-relogio {
+    height: 200px;
+    padding-top: 1px;
+}
+
+.container-descriçao-relogio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriçao-relogio {
+    font-size: 19px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #FFFFFF;
+    padding: 7px 15px 0px 15px
+}
+
+.titulo-relogio {
+    font-size: 25px;
+    font-family:'Saira', sans-serif;
+    color: #FFFFFF;
+    padding: 7px 15px 0px 15px
+}
+
+.botoes-card-relogio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 15px;
+}
+
+.btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    border: 3px solid #00AD6F;
+    color: #00AD6F;
+    text-shadow: rgb(0, 173, 111) 0px 0px 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+    font-family: 'Saira Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.btn-vercel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    border: 3px solid #00AD6F;
+    color: #00AD6F;
+    text-shadow: rgb(0, 173, 111) 0px 0px 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+    font-family: 'Saira Condensed', sans-serif;
+    cursor: pointer;
+}
+
+
+/* Animação dos botões dos cards */
+
+.btn-github:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+    transform: scale(1.1, 1.1);
+    transition: 0.4s;
+}
+
+.btn-vercel:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+    transform: scale(1.1, 1.1);
+    transition: 0.4s;
+}
+
+#sobre-mim {
+    background: #0B0B0B;
+    padding-top: 20px;
+}
+
+.container-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremim-titulo {
+    font-size: 41px;
+    font-family:'Saira', sans-serif; ;
+    color: #FFFFFF;
+}
+
+
+.itens-abt {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 500px;
+    gap: 70px;
+}
+
+.container-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    padding-bottom: 90px;
+    padding-left: 60px;
+    gap: 20px;
+}
+
+.text {
+    font-size: 25px;
+    font-family:'Saira', sans-serif;
+    color: #FFFFFF;
+}
+
+.img-section2 {
+    height: 350px;
+    border-radius: 200px;
+    box-shadow: 20px 10px 100px;
+    margin-bottom: 70px;
+}
+
+#contato {
+margin-bottom: 58px;
+}
+
+.container-titulo-contato {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 450px;
+}
+
+.contato-titulo {
+    font-size: 42px;
+    font-family:'Saira', sans-serif;
+    color: #FFFFFF;
+}
+
+.contatos {
+    display: flex;
+    gap: 80px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 450px;
+}
+
+input {
+    width: 561px;
+    height: 51px;
+    flex-shrink: 0;
+    border: 1px solid #00AD6F;
+    color: #7E7E7E;
+    font-family:'Saira', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #0B0B0B;
+}
+
+textarea {
+    width: 561px;
+    height: 262px;
+    flex-shrink: 0;
+    border: 1px solid #00AD6F;
+    overflow-wrap: break-word;
+    text-wrap: wrap;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    cursor: text;
+    resize: none;
+    font-family:'Saira', sans-serif;
+    font-size: 17px;
+    color: #7E7E7E;
+    background-color: #0B0B0B;
+}
+
+button {
+    width: 561px;
+    height: 40px;
+    border: 1px solid #00AD6F;
+    flex-shrink: 0;
+    font-family:'Saira', sans-serif;
+    font-size: 17px;
+    color: #7E7E7E;
+    background-color: #0B0B0B;
+    cursor: pointer;
+}
+ /* hover form */
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+button:hover,
+button:focus {
+    outline: none;
+    border-color: #00AD6F;
+    box-shadow: rgb(0, 173, 111) 0px 0px 10px; 
+    transition: 0.2s ease-in-out;
+}
+ /* fim hover form */
+
+.email-redesocial {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.email-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    font-family:'Saira', sans-serif;
+    font-size: 44px;
+    color: #00AD6F;
+}
+
+.p-email {
+    font-family:'Saira', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.redesociais {
+    display: flex;
+    flex-direction: column;
+}
+
+.redesocial {
+    font-family:'Saira', sans-serif;
+    font-size: 44px;
+    color: #00AD6F;
+}
+
+.p-redesocial {
+    font-family:'Saira', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.icones-rede-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkedin-infos {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkedin-contato {
+    width: 67px;
+    height: 67px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.p-linkedin {
+    font-family:'Saira', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.github-infos {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.github-contato {
+    width: 67px;
+    height: 67px;
+    border-radius: 50px;
+    flex-shrink: 0; 
+}
+
+/* hover icons */
+.linkedin-contato:hover,
+.linkedin-contato:focus,
+.github-contato:hover,
+.github-contato:focus {
+    outline: none;
+    background-color: #00AD6F;
+    box-shadow: rgb(0, 173, 111) 0px 0px 10px; 
+    transition: 0.2s ease-in-out;
+}
+ /* fim hover icons */
+
+.p-github {
+    font-family:'Saira', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.p-footer {
+    font-family:'Saira Condensed', sans-serif;
+    font-size: 20px;
+    color: #ffff;
+}
